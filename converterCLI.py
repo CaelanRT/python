@@ -33,5 +33,6 @@ while loop_control == 0:
             converted_far = (cel_input * 9/5) + 32
             print(f'{cel_input} Celsius is {converted_far} Farenheit')
         case 5:
+            print('Goodbye')
             loop_control = 1
         
