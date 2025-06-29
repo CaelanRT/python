@@ -1,5 +1,8 @@
 loop_control = 0
 
+def inch_to_centimeter(inch):
+    return inch * 2.54
+
 while loop_control == 0:
     print('What would you like to convert?\n' \
     '1. Inch to Centimeter\n' \
@@ -15,7 +18,7 @@ while loop_control == 0:
         case 1:
             print('Input value to convert to Centimeter:')
             inch_input = float(input())
-            converted_cent = inch_input * 2.54
+            converted_cent = inch_to_centimeter(inch_input)
             print(f'{inch_input} Inches is {converted_cent} Centimeters')
         case 2:
             print('Input value to convert to Inches:')
@@ -33,6 +36,8 @@ while loop_control == 0:
             converted_far = (cel_input * 9/5) + 32
             print(f'{cel_input} Celsius is {converted_far} Farenheit')
         case 5:
-            print('Goodbye')
+            print('Goodbye!')
             loop_control = 1
+
+
         
